@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Exo:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-primaria: #14133f;
+    --cor-secundaria: #f6f6f6; 
+    --cor-terciaria: #6571b1;
+    --cor-hover: #070F2B;
+
+    --fonte-principal: 'Exo';
+    --fonte-secundaria: 'Jost';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.menu {
+    display: flex;
+    gap: 80px;
+}
+
+.menu_link {
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.apresentacao {
+    padding: 8% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.destaque {
+    color: var(--cor-terciaria);
+}
+
+.conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+}
+
+.texto {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.subtitulo {
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+}
+
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.links_2 {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    border: 3px solid var(--cor-terciaria);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600px;
+    padding: 15.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+.links_2:hover {
+    background-color: var(--cor-hover);
+    border: none;
+}
+
+.imagem{
+    width: 50%;
+}
+
+.rodape {
+    color: var(--cor-hover);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.certificado{
+    color: var(--cor-terciaria);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .conteudo{
+        width: auto;
+    }
+
+}
